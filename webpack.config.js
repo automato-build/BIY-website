@@ -12,13 +12,14 @@
 // https://github.com/postcss/autoprefixer#webpack
 
 var path = require('path');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-const GoogleFontsPlugin = require('google-fonts-webpack-plugin');
+// var ExtractTextPlugin = require('mini-css-extract-plugin');
+// const GoogleFontsPlugin = require('google-fonts-webpack-plugin');
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-var extractPlugin = new ExtractTextPlugin({
-   filename: 'main.css'
-});
+// var extractPlugin = new ExtractTextPlugin({
+//    filename: 'main.css'
+// });
 
 module.exports = {
     entry: './src/index.js',
@@ -29,53 +30,34 @@ module.exports = {
     },
     devServer:{
         host:'0.0.0.0',
-        port:3000
+        port:3333
     },
     module: {
-        rules: [
-            {
-                test: /\.scss$/,
-                use: extractPlugin.extract({
-                    use: ['css-loader', 'sass-loader']
-                })
-            },
-            {
-                test: /\.css$/,
-                use: extractPlugin.extract({
-                    use: ['css-loader']
-                })
-            },
-            { 
-                test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
-                use: extractPlugin.extract({
-                    use: ['url-loader']
-                })
-            },
-            {
-                test: /\.js$/,
-                include: /src/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: ["es2015"]
-                    }
-                }
-            }
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: "babel-loader",
+          options: { presets: ["es2015"] }
+        }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: "style-loader" // creates style nodes from JS strings
+          },
+          {
+            loader: "css-loader" // translates CSS into CommonJS
+          },
+          {
+            loader: "sass-loader" // compiles Sass to CSS
+          }
         ]
+      }
+    ]
     },
     plugins: [
-        extractPlugin,
-        new webpack.optimize.UglifyJsPlugin({
-            include: /\.min\.js$/,
-            sourceMap: true,
-            compressor: {
-                warnings: false
-            }
-        }),
-        /*new GoogleFontsPlugin({
-            fonts: [
-                { family: "Roboto", variants: [ "100", "300", "400" ] }
-            ]
-        })*/
+        new UglifyJsPlugin()
     ]
 };
