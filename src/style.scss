@@ -1,0 +1,58 @@
+$red : #FF6262;
+$black: #3D3D3D;
+$yellow: #F5E6D0;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: white;
+}
+
+h1{
+	font-family: 'archive', serif;
+	font-size: 72px;
+	font-weight: bold;
+	color: $yellow;
+}
+
+video, img{
+	width:100%;
+	height:auto;
+}
+
+.full{
+	width: 100vw;
+	height: 100vh;
+}
+
+#landing{
+	background-color: $red;
+}
+
+/* ANIMATIONS */
+.bg-2-black{
+	@keyframes animateBgToBlack{
+		100%{
+			background-color: $black;
+		}
+	}
+	animation: animateBgToBlack 1s ease-out;
+  	animation-fill-mode: forwards;
+}
+
+.bg-2-yellow{
+	@keyframes animateBgToYellow{
+		100%{
+			background-color: $yellow;
+		}
+	}
+	animation: animateBgToYellow 1s ease-out;
+	animation-fill-mode: for
+}
+

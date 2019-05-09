@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white; }
+
+h1 {
+  font-family: 'archive', serif;
+  font-size: 72px;
+  font-weight: bold;
+  color: #F5E6D0; }
+
+video, img {
+  width: 100%;
+  height: auto; }
+
+.full {
+  width: 100vw;
+  height: 100vh; }
+
+#landing {
+  background-color: #FF6262; }
+
+/* ANIMATIONS */
+.bg-2-black {
+  animation: animateBgToBlack 1s ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes animateBgToBlack {
+  100% {
+    background-color: #3D3D3D; } }
+
+.bg-2-yellow {
+  animation: animateBgToYellow 1s ease-out;
+  animation-fill-mode: for; }
+
+@keyframes animateBgToYellow {
+  100% {
+    background-color: #F5E6D0; } }
