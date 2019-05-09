@@ -21,7 +21,8 @@
     "sass-loader": "^6.0.6",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
+    "webpack-dev-server": "^2.9.7",
+    "tar": ">=4.4.2"
   },
   "dependencies": {
     "jquery": "^3.4.1"
