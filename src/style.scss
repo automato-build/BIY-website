@@ -1,4 +1,4 @@
-$red : #FF6262;
+$red : #F38787;
 $black: #3D3D3D;
 $yellow: #F5E6D0;
 
@@ -9,16 +9,20 @@ $yellow: #F5E6D0;
 
 body{
 	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 400;
-	color: white;
+	color: $black;
 }
 
 h1{
 	font-family: 'archive', serif;
 	font-size: 72px;
 	font-weight: bold;
-	color: $yellow;
+}
+
+h2{
+	font-weight: 100;
+	font-size: 36px;
 }
 
 video, img{
@@ -29,10 +33,62 @@ video, img{
 .full{
 	width: 100vw;
 	height: 100vh;
+	position: relative;
+}
+
+.left{
+	width:50%;
+}
+
+.right{
+	left:50%;
+}
+
+.middle-y{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.buy{
+	display:inline;
+	font-family: 'Pacifico';
+	float:right;
+	font-size: 48px;
+	right:0;
+	transform: rotate(-7deg);
+	text-shadow: 0px 5px 100px #fff;
+	background: -webkit-linear-gradient(0deg, rgba(37,127,183,1) 0%, rgba(236,47,76,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 1s infinite ease-out;
+
+}
+
+#logo{
+	position:fixed;
+	top:50px;
+	left:50px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+#board{
+	width:85%;
+	height:auto;
+	margin-left:10%;
+}
+
+#kit-title{
+	margin-top:100px;
 }
 
 #landing{
-	background-color: $red;
+	background: linear-gradient(18deg, #ffc0c0, #f38787);
+
+	-webkit-animation: AnimationName 15s ease infinite;
+	-moz-animation: AnimationName 15s ease infinite;
+	animation: AnimationName 15s ease infinite;
 }
 
 /* ANIMATIONS */
@@ -54,5 +110,30 @@ video, img{
 	}
 	animation: animateBgToYellow 1s ease-out;
 	animation-fill-mode: for
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
 }
 

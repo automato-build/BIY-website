@@ -23,13 +23,13 @@ var extractPlugin = new ExtractTextPlugin({
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         filename: 'bundle.js',
-        publicPath: '/dist'
+        publicPath: '/docs'
     },
     devServer:{
         host:'0.0.0.0',
-        port:3000
+        port:3333
     },
     module: {
         rules: [
@@ -71,6 +71,12 @@ module.exports = {
             compressor: {
                 warnings: false
             }
+        }),
+        new GoogleFontsPlugin({
+            fonts: [
+                { family: "Pacifico", variants: [ "400" ] },
+                { family: "Roboto", variants: [ "100", "400" ] }
+            ]
         })
     ]
 };
