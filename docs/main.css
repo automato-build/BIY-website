@@ -44,7 +44,6 @@ video, img {
   font-size: 48px;
   right: 0;
   transform: rotate(-7deg);
-  text-shadow: 0px 5px 100px #fff;
   background: -webkit-linear-gradient(0deg, #257fb7 0%, #ec2f4c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -66,14 +65,11 @@ video, img {
   margin-top: 100px; }
 
 #landing {
-  background: linear-gradient(18deg, #ffc0c0, #f38787);
-  -webkit-animation: AnimationName 15s ease infinite;
-  -moz-animation: AnimationName 15s ease infinite;
-  animation: AnimationName 15s ease infinite; }
+  background-color: #F38787; }
 
 /* ANIMATIONS */
 .bg-2-black {
-  animation: animateBgToBlack 1s ease-out;
+  animation: animateBgToBlack 2s ease-out;
   animation-fill-mode: forwards; }
 
 @keyframes animateBgToBlack {
@@ -81,39 +77,23 @@ video, img {
     background-color: #3D3D3D; } }
 
 .bg-2-yellow {
-  animation: animateBgToYellow 1s ease-out;
-  animation-fill-mode: for; }
+  animation: animateBgToYellow 2s ease-out;
+  animation-fill-mode: forwards; }
 
 @keyframes animateBgToYellow {
   100% {
-    background-color: #F5E6D0; } }
+    background-color: #F1D8B3; } }
+
+.bg-2-red {
+  animation: animateBgToRed 2s ease-out;
+  animation-fill-mode: forwards; }
+
+@keyframes animateBgToRed {
+  100% {
+    background-color: #F38787; } }
 
 @-webkit-keyframes hue {
   from {
     -webkit-filter: hue-rotate(0deg); }
   to {
     -webkit-filter: hue-rotate(-360deg); } }
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 90%; }
-  50% {
-    background-position: 100% 11%; }
-  100% {
-    background-position: 0% 90%; } }
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 90%; }
-  50% {
-    background-position: 100% 11%; }
-  100% {
-    background-position: 0% 90%; } }
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 90%; }
-  50% {
-    background-position: 100% 11%; }
-  100% {
-    background-position: 0% 90%; } }
