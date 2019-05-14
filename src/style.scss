@@ -9,9 +9,9 @@ $yellow: #F0EDE2;
 
 body{
 	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	color: $black;
+	font-size: 30px;
+	font-weight: 100;
+	color: $yellow;
 	overflow-x: hidden;
 }
 
@@ -23,13 +23,14 @@ h1{
 
 h2{
 	font-weight: 100;
-	font-size: 36px;
+	font-size: 72px;
 }
 
 h3{
 	width:70%;
 	font-weight: 100;
 	font-size: 36px;
+	color: $black;
 }
 
 video, img{

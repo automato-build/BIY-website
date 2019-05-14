@@ -32,6 +32,16 @@ function changeBackgroundLanding(){
 function changeToSee(){
 	$('#bgg3').fadeOut(LANDING_ANIM_FADE_TIME);
 	$('#bgg1').fadeIn(LANDING_ANIM_FADE_TIME);
+
+	$('#kit-title').fadeOut(LANDING_ANIM_FADE_TIME/2, function(){
+		$('#kit-title').text('Fortune Recognition');
+		$('#kit-title').fadeIn(LANDING_ANIM_FADE_TIME/2);
+	});
+
+	$('#kit-description').fadeOut(LANDING_ANIM_FADE_TIME/2, function(){
+		$('#kit-description').text('See through the logic of Fortune.');
+		$('#kit-description').fadeIn(LANDING_ANIM_FADE_TIME/2);
+	});
 }
 
 function changeToMove(){
@@ -42,11 +52,31 @@ function changeToMove(){
 	// });
 	$('#bgg1').fadeOut(LANDING_ANIM_FADE_TIME);
 	$('#bgg2').fadeIn(LANDING_ANIM_FADE_TIME);
+
+	$('#kit-title').fadeOut(LANDING_ANIM_FADE_TIME/2, function(){
+		$('#kit-title').text('Harmonious Positioning System');
+		$('#kit-title').fadeIn(LANDING_ANIM_FADE_TIME/2);
+	});
+
+	$('#kit-description').fadeOut(LANDING_ANIM_FADE_TIME/2, function(){
+		$('#kit-description').text('Move with the logic of Harmony and Geomancy.');
+		$('#kit-description').fadeIn(LANDING_ANIM_FADE_TIME/2);
+	});
 }
 
 function changeToHear(){
 	$('#bgg2').fadeOut(LANDING_ANIM_FADE_TIME);
 	$('#bgg3').fadeIn(LANDING_ANIM_FADE_TIME);
+
+	$('#kit-title').fadeOut(LANDING_ANIM_FADE_TIME/2, function(){
+		$('#kit-title').text('Numerological Language Processing');
+		$('#kit-title').fadeIn(LANDING_ANIM_FADE_TIME/2);
+	});
+
+	$('#kit-description').fadeOut(LANDING_ANIM_FADE_TIME/2, function(){
+		$('#kit-description').text('Hear through the logic of Numerology.');
+		$('#kit-description').fadeIn(LANDING_ANIM_FADE_TIME/2);
+	});
 }
 
 $(document).ready(function(){
