@@ -1,6 +1,6 @@
 $red : #F38787;
 $black: #3D3D3D;
-$yellow: #F1D8B3;
+$yellow: #F0EDE2;
 
 *{
   margin: 0;
@@ -12,6 +12,7 @@ body{
 	font-size: 20px;
 	font-weight: 400;
 	color: $black;
+	overflow-x: hidden;
 }
 
 h1{
@@ -25,6 +26,12 @@ h2{
 	font-size: 36px;
 }
 
+h3{
+	width:70%;
+	font-weight: 100;
+	font-size: 36px;
+}
+
 video, img{
 	width:100%;
 	height:auto;
@@ -34,6 +41,10 @@ video, img{
 	width: 100vw;
 	height: 100vh;
 	position: relative;
+}
+
+.container{
+	padding: 50px;
 }
 
 .left{
@@ -64,6 +75,17 @@ video, img{
 
 }
 
+.background-gallery{
+	position: absolute;
+	width:100vw;
+	height:100vh;
+	background: no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 #logo{
 	position:fixed;
 	top:50px;
@@ -72,19 +94,23 @@ video, img{
 	cursor: pointer;
 }
 
-#board{
-	width:85%;
-	height:auto;
-	margin-left:10%;
-}
-
 #kit-title{
 	margin-top:100px;
 }
 
 #landing{
-	//background: linear-gradient(18deg, #ffc0c0, #e46565);
-	background-color: $red;
+	width:100vw;
+	height:100vh;
+}
+
+#description{
+	background-color: #F0EDE2;
+	padding-top:200px;
+	padding-bottom:200px;
+}
+
+#bgg2, #bgg3{
+	display:none;
 }
 
 /* ANIMATIONS */
@@ -96,26 +122,6 @@ video, img{
 	}
 	animation: animateBgToBlack 2s ease-out;
   	animation-fill-mode: forwards;
-}
-
-.bg-2-yellow{
-	@keyframes animateBgToYellow{
-		100%{
-			background-color: $yellow;
-		}
-	}
-	animation: animateBgToYellow 2s ease-out;
-	animation-fill-mode: forwards;
-}
-
-.bg-2-red{
-	@keyframes animateBgToRed{
-		100%{
-			background-color: $red;
-		}
-	}
-	animation: animateBgToRed 2s ease-out;
-	animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes hue {

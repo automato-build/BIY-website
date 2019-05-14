@@ -29,7 +29,7 @@ module.exports = {
     },
     devServer:{
         host:'0.0.0.0',
-        port:3333
+        port:3336
     },
     module: {
         rules: [
@@ -72,11 +72,11 @@ module.exports = {
                 warnings: false
             }
         }),
-        new GoogleFontsPlugin({
+        /*new GoogleFontsPlugin({
             fonts: [
                 { family: "Pacifico", variants: [ "400" ] },
                 { family: "Roboto", variants: [ "100", "400" ] }
             ]
-        })
+        })*/
     ]
 };
