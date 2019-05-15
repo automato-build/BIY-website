@@ -41,11 +41,6 @@ function changeToSee(){
 }
 
 function changeToMove(){
-	// $('#landing').addClass('bg-2-black')
-	// .on('animationend', function(){
- //        $('#landing').css({'backgroundColor' : '#3D3D3D'});
-	// 	$('#landing').removeClass('bg-2-black');
-	// });
 	$('#bgg1').fadeOut(LANDING_ANIM_FADE_TIME);
 	$('#bgg2').fadeIn(LANDING_ANIM_FADE_TIME);
 
