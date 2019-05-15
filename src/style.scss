@@ -1,5 +1,5 @@
 $red : #F38787;
-$black: #3D3D3D;
+$black: #222222;
 $yellow: #F0EDE2;
 
 *{
@@ -11,7 +11,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
 	font-weight: 100;
-	color: $yellow;
+	color: $black;
 	overflow-x: hidden;
 
 	@media screen and (max-width: 1200px){
@@ -42,7 +42,6 @@ h3{
 	width:70%;
 	font-weight: 100;
 	font-size: 36px;
-	color: $black;
 
 	@media screen and (max-width: 1200px){
 		font-size: 24px;
@@ -65,12 +64,6 @@ a{
 	}
 }
 
-.full{
-	width: 100vw;
-	height: 100vh;
-	position: relative;
-}
-
 .container{
 	padding: 50px;
 
@@ -79,12 +72,20 @@ a{
 	}
 }
 
-.left{
-	width:50%;
+
+.bottom-right{
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	text-align: right;
+	background-color:rgba(255, 255, 255, 0.7);
 }
 
-.right{
-	left:60%;
+.bottom{
+	width:100vw;
+	position:absolute;
+	text-align:center;
+	bottom:0px;
 }
 
 .middle-y{
@@ -96,10 +97,10 @@ a{
 .buy{
 	display:inline;
 	font-family: 'Pacifico';
-	float:left;
 	font-size: 48px;
 	margin-top:40px;
 	transform: rotate(-7deg);
+	cursor: pointer;
 	background: -webkit-linear-gradient(0deg, rgba(37,127,183,1) 0%, rgba(236,47,76,1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -118,7 +119,17 @@ a{
 	position: absolute;
 	width:100vw;
 	height:100vh;
-	background: no-repeat; 
+	background: no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.full-image{
+	width:100vw;
+	height:100vh;
+	background: no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -131,10 +142,6 @@ a{
 	left:50px;
 	z-index: 10;
 	cursor: pointer;
-}
-
-#kit-title{
-	margin-top:100px;
 }
 
 #landing{
@@ -155,6 +162,11 @@ a{
 
 #bgg2, #bgg3{
 	display:none;
+}
+
+#about{
+	color: #fff; 
+	background-color:$black;
 }
 
 /* ANIMATIONS */
