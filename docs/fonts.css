@@ -42,3 +42,13 @@
 		url("./font/Roboto-Regular.ttf") format("truetype"),
 		url("./font/Roboto-Regular.svg") format("svg");
 }
+
+
+
+@font-face {
+    font-family: 'archive';
+    src: url('./font/archive-regular-webfont.woff2') format('woff2'),
+         url('./font/archive-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

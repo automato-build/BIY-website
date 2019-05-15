@@ -42,6 +42,10 @@ function changeToSee(){
 		$('#kit-description').text('See through the logic of Fortune.');
 		$('#kit-description').fadeIn(LANDING_ANIM_FADE_TIME/2);
 	});
+
+	$('#kit-buy').fadeOut(LANDING_ANIM_FADE_TIME/2, function(){
+		$('#kit-buy').fadeIn(LANDING_ANIM_FADE_TIME/2);
+	});
 }
 
 function changeToMove(){
@@ -62,6 +66,10 @@ function changeToMove(){
 		$('#kit-description').text('Move with the logic of Harmony and Geomancy.');
 		$('#kit-description').fadeIn(LANDING_ANIM_FADE_TIME/2);
 	});
+
+	$('#kit-buy').fadeOut(LANDING_ANIM_FADE_TIME/2, function(){
+		$('#kit-buy').fadeIn(LANDING_ANIM_FADE_TIME/2);
+	});
 }
 
 function changeToHear(){
@@ -77,6 +85,10 @@ function changeToHear(){
 		$('#kit-description').text('Hear through the logic of Numerology.');
 		$('#kit-description').fadeIn(LANDING_ANIM_FADE_TIME/2);
 	});
+
+	$('#kit-buy').fadeOut(LANDING_ANIM_FADE_TIME/2, function(){
+		$('#kit-buy').fadeIn(LANDING_ANIM_FADE_TIME/2);
+	});
 }
 
 $(document).ready(function(){
@@ -84,4 +96,9 @@ $(document).ready(function(){
 	$('#bgg2').css({'backgroundImage' : 'url(img/bg-move.jpg)'});
 	$('#bgg3').css({'backgroundImage' : 'url(img/bg-hear.jpg)'});
 	setInterval(changeBackgroundLanding, LANDING_ANIM_TIME);
+});
+
+
+$('#kit-buy').on('click', function(e){
+	console.log('CLICK');
 });
