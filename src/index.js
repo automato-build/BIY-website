@@ -74,5 +74,18 @@ $(document).ready(function(){
 
 
 $('#kit-buy').on('click', function(e){
-	console.log('CLICK');
+	var goto;
+	if(cBoardBg == boards.MOVE) goto = $('#move-buy');
+	else if(cBoardBg == boards.SEE) goto = $('#see-buy');
+	else goto = $('#hear-buy');
+
+	$('html, body').animate({
+		scrollTop : goto.offset().top
+	}, 1000);
+});
+
+$('#logo').on('click', function(e){
+	$('html, body').animate({
+		scrollTop : 0
+	}, 1000);
 });

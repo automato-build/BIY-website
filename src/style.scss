@@ -64,6 +64,15 @@ a{
 	}
 }
 
+
+
+a.no-underline{
+	border-bottom: none;
+	&:hover{
+		border-bottom: none;
+	}
+}
+
 .container{
 	padding: 50px;
 
@@ -75,8 +84,8 @@ a{
 
 .bottom-right{
 	position:absolute;
-	right:0px;
-	bottom:0px;
+	right:20px;
+	bottom:20px;
 	text-align: right;
 	background-color:rgba(255, 255, 255, 0.7);
 }
@@ -136,6 +145,15 @@ a{
 	background-size: cover;
 }
 
+.logo{
+	width:auto;
+	height:auto;
+}
+
+.tech-sheet{
+	background-color: $black;
+}
+
 #logo{
 	position:fixed;
 	top:50px;
@@ -167,17 +185,6 @@ a{
 #about{
 	color: #fff; 
 	background-color:$black;
-}
-
-/* ANIMATIONS */
-.bg-2-black{
-	@keyframes animateBgToBlack{
-		100%{
-			background-color: $black;
-		}
-	}
-	animation: animateBgToBlack 2s ease-out;
-  	animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes hue {
