@@ -39,7 +39,6 @@ h2{
 }
 
 h3{
-	width:70%;
 	font-weight: 100;
 	font-size: 36px;
 
@@ -64,13 +63,15 @@ a{
 	}
 }
 
-
-
 a.no-underline{
 	border-bottom: none;
 	&:hover{
 		border-bottom: none;
 	}
+}
+
+ul{
+	padding:40px;
 }
 
 .container{
@@ -80,7 +81,6 @@ a.no-underline{
 		padding: 30px;
 	}
 }
-
 
 .bottom-right{
 	position:absolute;
@@ -104,7 +104,7 @@ a.no-underline{
 }
 
 .buy{
-	display:inline;
+	display:inline-block;
 	font-family: 'Pacifico';
 	font-size: 48px;
 	margin-top:40px;
@@ -136,6 +136,7 @@ a.no-underline{
 }
 
 .full-image{
+	position:relative;
 	width:100vw;
 	height:100vh;
 	background: no-repeat center center; 
@@ -151,7 +152,20 @@ a.no-underline{
 }
 
 .tech-sheet{
-	background-color: $black;
+	background-color: rgba(10, 10, 10, 0.9);
+	width:400px;
+	height:auto;
+	padding:20px;
+	left:50px;
+	color:white;
+
+	p{
+		margin-top:20px;
+	}
+}
+
+.limited{
+	font-size: 20px;
 }
 
 #logo{
@@ -171,6 +185,11 @@ a.no-underline{
 	background-color: #F0EDE2;
 	padding-top:200px;
 	padding-bottom:200px;	
+
+
+	h3{
+		width:70%;
+	}
 
 	@media screen and (max-width: 1200px){
 		padding-top:100px;
