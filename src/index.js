@@ -63,9 +63,9 @@ function changeToHear(){
 }
 
 $(document).ready(function(){
-	$('#bgg1').css({'backgroundImage' : 'url(img/see-kit.jpg)'});
-	$('#bgg2').css({'backgroundImage' : 'url(img/move-kit.jpg)'});
-	$('#bgg3').css({'backgroundImage' : 'url(img/hear-kit.jpg)'});
+	$('#bgg1').css({'backgroundImage' : 'url(img/see-kit-r.jpg)'});
+	$('#bgg2').css({'backgroundImage' : 'url(img/move-kit-r.jpg)'});
+	$('#bgg3').css({'backgroundImage' : 'url(img/hear-kit-r.jpg)'});
 	$('#move-buy').css({'backgroundImage' : 'url(img/move-package.jpg)'});
 	$('#see-buy').css({'backgroundImage' : 'url(img/see-package.jpg)'});
 	$('#hear-buy').css({'backgroundImage' : 'url(img/hear-package.jpg)'});
