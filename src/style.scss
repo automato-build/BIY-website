@@ -8,7 +8,7 @@ $yellow: #F0EDE2;
 }
 
 body{
-	font-family: serif;
+	font-family: Libre Baskerville;
 	font-size: 30px;
 	font-weight: 100;
 	color: $black;
@@ -47,6 +47,14 @@ h3{
 	}
 }
 
+.section-title{
+  font-weight: 200;
+	font-size: 16px;
+}
+.small{
+  font-weight: 100;
+	font-size: 16px;
+}
 a{
 	color: $black;
 	text-decoration: none;
@@ -66,7 +74,7 @@ a.no-underline{
 }
 
 ul{
-	padding:40px;
+	padding:20px;
 }
 
 .full-media{
@@ -134,7 +142,7 @@ ul{
 	position: absolute;
 	width:100vw;
 	height:100vh;
-	background: no-repeat center center; 
+	background: no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -145,7 +153,7 @@ ul{
 	position:relative;
 	width:100vw;
 	height:100vh;
-	background: no-repeat center center; 
+	background: no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -170,6 +178,26 @@ ul{
 	p{
 		margin-top:20px;
 	}
+}
+
+.specs{
+  position: relative;
+  height: auto;
+}
+
+.tech-sheet-full{
+  padding: 70px;
+  height:auto;
+
+  .shop{
+    margin-left: 50%;
+        bottom: 70px;
+        right: 70px;
+        transform: translateX(-50%);
+        width: auto;
+        display: block;
+        text-align: center;
+  }
 }
 
 .limited{
@@ -207,7 +235,7 @@ ul{
 #description{
 	background-color: #F0EDE2;
 	padding-top:200px;
-	padding-bottom:200px;	
+	padding-bottom:200px;
 
 
 	h3{
@@ -216,7 +244,7 @@ ul{
 
 	@media screen and (max-width: 1200px){
 		padding-top:100px;
-		padding-bottom:100px;	
+		padding-bottom:100px;
 	}
 }
 
@@ -225,7 +253,7 @@ ul{
 }
 
 #about{
-	color: #fff; 
+	color: #fff;
 	background-color:$black;
 }
 
@@ -298,14 +326,14 @@ ul{
 }
 
 #indian1{
-	
+
 	position:absolute;
 	bottom:20%;
 	left:10%;
 }
 
 #indian2{
-	
+
 	position:absolute;
 	bottom:25%;
 	left:15%;
@@ -323,4 +351,3 @@ ul{
     -webkit-filter: hue-rotate(-360deg);
   }
 }
-
