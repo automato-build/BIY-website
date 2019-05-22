@@ -66,6 +66,10 @@ $(document).ready(function(){
 	$('#bgg1').css({'backgroundImage' : 'url(img/see-kit-r.jpg)'});
 	$('#bgg2').css({'backgroundImage' : 'url(img/move-kit-r.jpg)'});
 	$('#bgg3').css({'backgroundImage' : 'url(img/hear-kit-r.jpg)'});
+	$('#chinese-cat').css({'backgroundImage' : 'url(img/gifs/wavingchinese_cat.gif)'});
+	$('#hindu').css({'backgroundImage' : 'url(img/gifs/anhindularge.gif)'});
+	$('#chilli').css({'backgroundImage' : 'url(img/gifs/Chilli.gif)'});
+	$('#yinyang').css({'backgroundImage' : 'url(img/gifs/yin_yang.gif)'});
 	$('#move-buy').css({'backgroundImage' : 'url(img/move-package.jpg)'});
 	$('#see-buy').css({'backgroundImage' : 'url(img/see-package.jpg)'});
 	$('#hear-buy').css({'backgroundImage' : 'url(img/hear-package.jpg)'});

@@ -8,7 +8,7 @@ $yellow: #F0EDE2;
 }
 
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: serif;
 	font-size: 30px;
 	font-weight: 100;
 	color: $black;
@@ -31,10 +31,10 @@ h1{
 
 h2{
 	font-weight: 100;
-	font-size: 64px;
+	font-size: 60px;
 
 	@media screen and (max-width: 1200px){
-		font-size: 52px;
+		font-size: 50px;
 	}
 }
 
@@ -45,11 +45,6 @@ h3{
 	@media screen and (max-width: 1200px){
 		font-size: 24px;
 	}
-}
-
-video, img{
-	width:100%;
-	height:auto;
 }
 
 a{
@@ -72,6 +67,11 @@ a.no-underline{
 
 ul{
 	padding:40px;
+}
+
+.full-media{
+	width:100%;
+	height:auto;
 }
 
 .container{
@@ -121,6 +121,13 @@ ul{
 	@media screen and (max-width: 1200px){
 		font-size: 36px;
 	}
+}
+
+.gradient{
+	background: -webkit-linear-gradient(0deg, rgba(37,127,183,1) 0%, rgba(236,47,76,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 1s infinite ease-out;
 }
 
 .background-gallery{
@@ -178,6 +185,12 @@ ul{
 	}
 }
 
+.rotate{
+	-webkit-animation:spin 10s linear infinite;
+	-moz-animation:spin 10s linear infinite;
+	animation:spin 10s linear infinite;
+}
+
 #logo{
 	position:fixed;
 	top:50px;
@@ -215,6 +228,92 @@ ul{
 	color: #fff; 
 	background-color:$black;
 }
+
+#chinese-cat{
+	position:absolute;
+	bottom:0;
+	width:100vw;
+	height:50px;
+	background:repeat;
+}
+
+#hindu{
+	position:absolute;
+	left:0;
+	width:50px;
+	height:100vh;
+	background:repeat;
+}
+
+#chilli{
+	position:absolute;
+	right:0;
+	width:50px;
+	height:100vh;
+	background:repeat;
+}
+
+#yinyang{
+	position:absolute;
+	top:0;
+	width:100vw;
+	height:50px;
+	background:repeat;
+}
+
+#mystic{
+	position:absolute;
+	top:10%;
+	right:10%;
+}
+
+#eye{
+	position:absolute;
+	top:20%;
+	left:15%;
+	transform:rotate(20deg);
+}
+
+#chinese-astrology{
+	position:absolute;
+	top:20%;
+	left:15%;
+	transform:rotate(20deg);
+}
+
+#taurus{
+	position:absolute;
+	bottom:10%;
+	right:0%;
+	-webkit-animation:moveleft 20s linear infinite;
+	-moz-animation:moveleft 20s linear infinite;
+	animation:moveleft 20s linear infinite;
+}
+
+#chinese-only{
+	position:absolute;
+	bottom:50%;
+	left:20%;
+	transform:rotate(180deg);
+}
+
+#indian1{
+	
+	position:absolute;
+	bottom:20%;
+	left:10%;
+}
+
+#indian2{
+	
+	position:absolute;
+	bottom:25%;
+	left:15%;
+	transform:rotate(50deg);
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes moveleft { 100% { right:100% } }
 
 @-webkit-keyframes hue {
   from {
