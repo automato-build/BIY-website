@@ -21,6 +21,9 @@ var extractPlugin = new ExtractTextPlugin({
 });
 
 module.exports = {
+    node: {
+        fs: "empty"
+    },
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'docs'),
